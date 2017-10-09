@@ -1,0 +1,44 @@
+\documentclass{article}
+
+\title{Comments on the Homework}
+\author{Johannes Boehm}
+
+\begin{document}
+\maketitle
+
+\section{Homework 1, 2}
+\begin{itemize}
+\item When you interpret parameter estimates, always pay attention to the units the variables are measured in. Aviod using ''$A$ increases by 5 units if $B$ increases by one unit''.
+\item The $R^2$ is always between 0 and 1. You cannot use it to explain whether the two variables are positively or negatively related. Use the sign of the estimated coefficient instead.
+\item Avoid saying ''there is a weak relationship between $A$ and $B$''. What exactly is a ''weak relationship''? Do you mean that the coefficient is low, or do you mean that the fit (i.e. the $R^2$) is bad? Try to be precise.
+\item Be careful with the word ''test'', as it has a special meaning in statistics (econometrics being a part thereof). You should only use it in the context of hypothesis testing.
+\item When your homework is longer than two, sometimes three pages (excluding computer output), chances are high that you wrote something unnecessary. Try to be precise. In the exam you will have very limited time.
+\end{itemize}
+
+\section{Homework 3}
+\begin{itemize}
+\item If we already know $\beta_2 > 0$, then there is no reason to test. However, if we can only rule out $\beta_2 \geq 0$, then there is reason to use a one-sided test.
+\item Maybe I was not really clear during class: the fact that the statistic $t=(b_2 - \beta_2^* )/sd(b_2)$ is $t$-distributed with $N-k$ degrees of freedom only holds under $H_0: \beta = \beta_2^* $.
+\end{itemize}
+
+\section{Homework 4}
+\begin{itemize}
+\item When you describe regression output, write down the regression equation instead of the STATA command.
+\item $SF$ is father's schooling, $SM$ is mother's schooling. Read the description of the data.
+\end{itemize}
+
+\section{Homework 5, 6}
+\begin{itemize}
+\item Please attach the computer output to the homework. Otherwise it's hard to check whether what you say makes sense.
+\item There is some confusion about the interpretation of the $p$ value, which may be partly caused by the interpretation in the book. Probably the easiest definition/interpretation is the following: ''The $p$ value is the smallest significance level such that you still reject the null hypothesis''. If you \emph{really} want to interpret it as a probability: suppose your test statistic is 5, then you could say ''Under the null hypothesis, the probability that the test statistic is greater than 5 [in absolute value] is exactly $p$''. If possible, I would refrain from interpreting the $p$ value as a probability, but rather use the first definition. I will talk to Chris about this and will let you know how he thinks about this.
+\item If you run a regression with an intercept and a dummy variable, and the intercept cannot be reasonably interpreted (say, because the other regressors are nowhere near zero), then it clearly does not make sense to interpret the intercept for the subsample which is characterized by the dummy variable (i.e. if $b_1$ is the intercept estimate and $\delta$ is the estimate for the coefficient of the dummy, you cannot interpret $b_1+\delta$ if you cannot interpret $b_1$). You should rather interpret the coefficient of the dummy on its own.
+\end{itemize}
+
+\section{Homework 7}
+\begin{itemize}
+\item A statement like ''we reject $H_0$ at all significance levels'' cannot be correct. For sufficiently small test size $alpha$ the critical value goes to infinity, so for \emph{some} very small test size you will not be able to reject $H_0$. If you want to emphasize that the $t$-statistic is very large, say that you reject $H_0$ at the 0.1 percent level.
+\item Many of you wrote something like ''the test statistic is significant''. Usually the word ''significant'' is only used for the parameters that you test, i.e. ''the parameters are jointly significant''. I do not really know how important things like these are in the exam.
+
+\end{itemize}
+
+\end{document}
