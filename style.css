@@ -1,6 +1,6 @@
  h1 {
  font-family: 'Arial', sans-serif;
- color: rgb(230, 20, 45);
+ color: rgb(226, 0, 32);
  font-weight: 700;
  padding: 0px;
  vertical-align: bottom;
@@ -11,7 +11,7 @@
  font-family: 'Arial', sans-serif;
  font-size: 24pt;
 
- color: rgb(230, 20, 45);
+ color: rgb(226, 0, 32);
  font-weight: 700;
  padding: 0px;
  vertical-align: bottom;
@@ -62,7 +62,7 @@
 
  a.biglink {
  font-family: 'Arial', sans-serif;
- color: rgb(230, 20, 45);
+ color: rgb(226, 0, 32);
  padding: 0px;
  margin:0px;
  font-size: 12pt;
@@ -72,11 +72,11 @@
  }
 
  a.paperlink {
- color: rgb(230, 20, 45);
+ color: rgb(226, 0, 32);
  }
 
  a.backlink {
- color: rgb(230, 20, 45);
+ color: rgb(226, 0, 32);
  }
 
  body {
